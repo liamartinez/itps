@@ -36,13 +36,16 @@ header { position: relative; padding: 0 0 0 280px; border-bottom: 1px solid #999
 }
 
 #bgImage {
-	position: absolute;
+	position: relative;
+	width: 100%;
+	margin-top: -175px;
+/*
 	left: 0;
-	margin: 0;
 	padding: 0;
 	width: 100%;
 	height: 100%;
 	background-color: black;
+*/
 }
 
 .center {
@@ -112,6 +115,7 @@ line-height: 1.4em;
 }
 
 .contentPage {
+	margin-top: 55px; 
 	position: relative;
 }
 
@@ -125,6 +129,26 @@ img.titles {
 	margin-bottom: 5px; 
 }
 
+
+#NYU a:link{
+	color: black;
+}
+
+#NYU a:hover {
+	background-color: #522F91;
+	text-decoration: none;
+	color: white;
+}
+
+#ITP a:link{
+	color: black;
+}
+
+#ITP a:hover {
+	background-color: #28284F;
+	text-decoration: none;
+	color: white;
+}
 
 .titles {
 		font-family: 'Yanone Kaffeesatz', 'Ubuntu','OstrichSansMedium' ,'Lucida Sans Unicode', 'Lucida Grande', 'PT Sans Narrow', sans-serif;
@@ -203,12 +227,48 @@ h3 {
 	margin-bottom: 80px; 
 }
 
+/* for the quotes */
+.name {
+	font-family: 'Yanone Kaffeesatz', 'Ubuntu','OstrichSansMedium' ,'Lucida Sans Unicode', 'Lucida Grande', 'PT Sans Narrow', sans-serif;
+    font-weight: 300;
+	font-size: 2em;
+	letter-spacing: .1em;
+	color:yellow;
+	text-align: right;
+}
+
+.country {
+	font-family:   'Nobile', sans-serif;
+	font-size: 12px;
+	line-height: 1.6em;
+	color:yellow;
+	text-align: right;
+}
+
+.title {
+	font-family:   'Nobile', sans-serif;
+	font-size: 12px;
+	line-height: 1.6em;
+	color: yellow;
+	text-align: right;
+}
+
+footer {
+	color: white; width: 100%; height: 100px; background-color: black; padding-top: 45px; padding-left: 30px;
+}
+
+#ITPName {
+	font-family: 'Yanone Kaffeesatz', 'Ubuntu','OstrichSansMedium' ,'Lucida Sans Unicode', 'Lucida Grande', 'PT Sans Narrow', sans-serif;
+    font-weight: 300;
+	font-size: 2em;
+	letter-spacing: .1em;
+}
 
 /* parallax */
 
 section { background: url(../images/slide1a.jpg) 50% 0 no-repeat fixed;  } /* what does adding a background here do?  */
 
-.story { height: 600px; padding: 0; margin: 0; width: 100%; max-width: 1920; position: relative; margin: 0 auto; }
+.story { height: 550px; padding: 0; margin: 0; width: 100%; max-width: 1920; position: relative; margin: 0 auto; }
 
 #first { background: url(../images/wintershow2011_11.jpg)  no-repeat center center fixed; 
 	-webkit-background-size: cover;
@@ -218,13 +278,20 @@ section { background: url(../images/slide1a.jpg) 50% 0 no-repeat fixed;  } /* wh
 	}
 
 
+/*
 #second { background: url(../images/wintershow2011_07.jpg)  no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover; 
 	}
+*/
 	
+#second {
+	background-color: #D34F5E; color: white;  width: 100%;  height:200px;  line-height: 1.5em; box-shadow: 0 0 25px rgba(0,0,0,0.3); 
+}	
+	
+
 #third { background: url(../images/wintershow2011_26.jpg)  no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -232,12 +299,22 @@ section { background: url(../images/slide1a.jpg) 50% 0 no-repeat fixed;  } /* wh
 	background-size: cover;
 	 }
 
+
+
+#fourth { 
+background-color: #317C8A; color: white;  width: 100%;  height:200px;  line-height: 1.5em; box-shadow: 0 0 25px rgba(0,0,0,0.3); 
+
+	 }
+
+
+/*
 #fourth { background: url(../images/wintershow2011_36.jpg)  no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 	 }
+*/
 
 #fifth { background: url(../images/wintershow2011_09.jpg)  no-repeat center center fixed; 
 	-webkit-background-size: cover;
@@ -246,6 +323,17 @@ section { background: url(../images/slide1a.jpg) 50% 0 no-repeat fixed;  } /* wh
 	background-size: cover;
 	 }
 
+#sixth { 
+background-color: #375591; color: white;  width: 100%;  height:200px;  line-height: 1.5em; box-shadow: 0 0 25px rgba(0,0,0,0.3); 
+
+	 }
+	 
+#seventh { background: url(../images/wintershow2011_36.jpg)  no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	 }	 
 
 /* Background Only */
 
@@ -253,28 +341,26 @@ section { background: url(../images/slide1a.jpg) 50% 0 no-repeat fixed;  } /* wh
 /* #first { margin-bottom: 30% } */
 #first article { margin-top 50px; background-color: #D34F5E; color: white;  width: 100%; line-height: 1.5em; box-shadow: 0 0 25px rgba(0,0,0,0.3); }
 /* #first article p { margin-bottom: 25px; margin-top: 25px; }  */
-#first article a { color: #ff0;}
 
 /* Background Only */
-#second { padding: 150px 0;}
-#second article { background: url(../images/col2.png) repeat #333; color: #fff; width: 445px; margin-left: 300; padding: 10px 20px; text-shadow: 0 -1px 0 rgba(0,0,0,0.5); line-height: 1.5em; box-shadow: 0 0 25px rgba(0,0,0,0.3); border: 1px solid rgba(150,150,150,0.1); }
-#second article p { margin-bottom: 25px; }
-#second article a { color: #ff0;}
+/* #second { padding: 10px 0px;} */
+#second article {  color: #fff; line-height: 1.5em; padding-top: 9%;  }
+#second article p { text-align: right}
+
 
 /* Background Only */
-#third { padding: 50px 0;}
-#third article { background: url(../images/col1.png) repeat #333; color: #fff; width: 445px; margin-left: 300; padding: 10px 20px; text-shadow: 0 -1px 0 rgba(0,0,0,0.5); line-height: 1.5em; box-shadow: 0 0 25px rgba(0,0,0,0.3); border: 1px solid rgba(150,150,150,0.1); }
-#third article p { margin-bottom: 25px; }
-#third article a { color: #ff0;}
+#third article { margin-top 50px; background-color: #D34F5E; color: white;  width: 100%; line-height: 1.5em; box-shadow: 0 0 25px rgba(0,0,0,0.3); }
 
 /* Background Only */
-#fourth { padding: 50px 0;}
-#fourth article { background: url(../images/col2.png) repeat #333; color: #fff; width: 445px; margin-left: 300; padding: 10px 20px; text-shadow: 0 -1px 0 rgba(0,0,0,0.5); line-height: 1.5em; box-shadow: 0 0 25px rgba(0,0,0,0.3); border: 1px solid rgba(150,150,150,0.1); }
-#fourth article p { margin-bottom: 25px; }
-#fourth article a { color: #ff0;}
+#fourth article {  color: #fff; line-height: 1.5em; padding-top: 9%;  }
+#fourth article p { text-align: right}
 
 /* Background Only */
-#fifth { padding: 50px 0;}
-#fifth article { background: url(../images/col3.png) repeat #333; color: #fff; width: 445px; margin-left: 300; padding: 10px 20px; text-shadow: 0 -1px 0 rgba(0,0,0,0.5); line-height: 1.5em; box-shadow: 0 0 25px rgba(0,0,0,0.3); border: 1px solid rgba(150,150,150,0.1); }
-#fifth article p { margin-bottom: 25px; }
-#fifth article a { color: #ff0;}
+#fifth article { margin-top 50px; background-color: #D34F5E; color: white;  width: 100%; line-height: 1.5em; box-shadow: 0 0 25px rgba(0,0,0,0.3); }
+
+/* Background Only */
+#sixth article {  color: #fff; line-height: 1.5em; padding-top: 9%;  }
+#sixth  article p { text-align: right}
+
+/* Background Only */
+#seventh article { margin-top 50px; background-color: #D34F5E; color: white;  width: 100%; line-height: 1.5em; box-shadow: 0 0 25px rgba(0,0,0,0.3); }
