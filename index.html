@@ -5,7 +5,15 @@
 	<meta charset='UTF-8' />
 	
 	<title>ITP Shanghai</title>
-	
+	<link href='http://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Nobile' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu:bold' rel='stylesheet' type='text/css'> 
+	<link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,300,200' rel='stylesheet' type='text/css'>
+
+
 <!--
 	<link rel='stylesheet' href='css/bootstrap/css/bootstrap.css' />
 	<link href='css/bootstrap/css/bootstrap-responsive.css' rel="stylesheet">
@@ -17,9 +25,11 @@
 	<!--[if IE]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
+<!--
 
 	<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js'></script>
 	<script src='js/example.js'></script>
+-->
 	
 	    <!-- Le fav and touch icons -->
     <link rel="shortcut icon" href="twitter-bootstrap-v2/docs/examples/images/favicon.ico">
@@ -34,63 +44,59 @@
 
 	<div class="frontPage">
 		<img id="BGImage" width="100%" src="images/wintershow2011_02.jpg"/>
-		<img class="center-middle" src="images/itpshanghai.png" alt="pic"/> 
+		<!-- <img class="center-logo" src="images/itpshanghai.png" alt="pic"/>  -->
+
 		<div id="white-box">
-			<img class = "center" src="images/itps_down.png"/> 
-		</div>
-	</div>
+			<div id="itp-box"></div>
+			<div id="shanghai-box"></div>
+			<img class="center-logo2" src="images/itpshanghai.png" alt="pic"/> 
+			<!-- <img class = "center" src="images/itps_down.png"/>  -->
+		</div> <!-- white-box -->
+
+	</div> <!-- frontpage -->
 	
 	
 	<div class="contentPage">
 		<div class="container-fluid">
 		
-				<h1> The Interactive Telecommunications Program in Shanghai</h1>
+			<h1> THE INTERACTIVE TELECOMMUNICATIONS PROGRAM IN SHANGHAI</h1>
 				
 			<div class="row-fluid">	
+				<div class="span4">
+					<span class = "titles" id="news"><a href ="#">NEWS</a></span>
+					<p class="excerpt"> <b>September 1, 2012</b> <br> <br> <br>ITP, the pioneering graduate program in New Media at NYU’s Tisch School of the Arts is pleased to announce an exciting new venture, its first extension in its more than 30 year history: ITP Shanghai, opening September 2013. </p>
+				</div> <!-- span4 -->
 			
 				<div class="span4">
-					<a href ="#"><img class="titles" src="images/bar_news.png"/></a>
-					<div class="date"> sept 1, 2012 </div>
-					<p class="excerpt"> ITP, the pioneering graduate program in New Media at NYU’s Tisch School of the Arts is pleased to announce an exciting new venture, its first extension in its more than 30 year history: ITP Shanghai, opening September 2013. </p>
-				</div> 
-			
-				<div class="span4">
-					<a href ="#"><img class="titles" src="images/bar_faq.png"/></a>
+					<span class = "titles" id="faq"><a href ="#">FAQ</a></span>
 					<p class="excerpt"> <b> Where will ITP's Program in Shanghai be located?</b> <br> <br>
 ITP's program in Shanghai will initially be located on the campus of East China Normal University, one of the country’s premier institutions of higher learning, located to the northwest of the city center. The sprawling, green campus hosts many facilities such as a large library, classroom and administrative buildings.   </p>
-				</div>
+				</div> <!-- span4 -->
 				
 				<div class="span4">
-					<a href ="#"><img class="titles" src="images/bar_admis.png"/></a>
-					<p class="excerpt"> There will be an open house tomorrow. Come visit! ITP is a two-year graduate program located in the Tisch School of the Arts whose mission is to explore the imaginative use of communications technologies — how they might augment, improve, and bring delight and art into people's lives.  </p>
-				</div>
+					<span class = "titles" id="admis"><a href ="#">ADMISSIONS</a></span>
+					<p class="excerpt"><b>Apply here!</b> <br><br> <br> There will be an open house tomorrow. Come visit! ITP is a two-year graduate program located in the Tisch School of the Arts whose mission is to explore the imaginative use of communications technologies — how they might augment, improve, and bring delight and art into people's lives.  </p>
+				</div> <!-- span4 -->
 
-			 </div>
-			 
-			 <a href ="#"><img class = "center down" src="images/itps_down.png"/></a>
-			 
-		</div>
-				
-		</div>
-		</div>
-	</div>
+			 </div> <!-- row-fluid -->			 
+			 <a href ="#"><img class = "center down" src="images/itps_down.png"/></a> <!-- fix! -->		 
+		</div><!--  container-fluid -->
+		
+		<div id = "blue-box">
+				  	  <img class = "center" src="images/itps_down.png"/> 
+					  <h2> WHAT DO ALUMNI SAY ABOUT ITP? </h2>
+		 </div> <!-- blue-box -->
+	</div> <!-- content-page -->
 		
 		
 		
-		
-				<section class="story" id="first" data-speed="5" data-type="background">
-				 <div data-type="sprite" data-offsetY="500" data-Xposition="25%" data-speed="2"></div>
-				 <article>
-				  <h2>What do alumni say about ITP? </h2>
 
-				 </article>
-				</section>
-				
-				<section class="story" id="second" data-speed="11" data-type="background">
-				 <div data-type="sprite" data-offsetY="-950" data-Xposition="25%" data-speed="5"></div>
-				 <article>
-				  <h2>Naoto Yokoyama</h2>
-				  <div>
+	<section class="story" id="first" data-speed="5" data-type="background">	
+	<article>	
+		<div class="container-fluid">
+			<div class="row-fluid">	
+				<div class="span8">
+					<h3>Chien Yu-Lin</h3>
 				   <p>
 						Year of graduation: 2002 <br>
 						From: Japan <br>
@@ -98,94 +104,88 @@ ITP's program in Shanghai will initially be located on the campus of East China 
 						
 						What did it mean for you to attend ITP? 
 						ITP changed my life. To study at ITP was one of the most challenging and valuable experience. It was my first step to get enter into real “global” world..
-				   </p>
-				  </div>
-				 </article>
-				</section>
-				
-				<section class="story" id="third" data-speed="11" data-type="background">
-				 <div data-type="sprite" data-offsetY="950" data-Xposition="25%" data-speed="2"></div>
-				 <article>
-				  <h2>Xiaoyang Feng</h2>
-				  <div>
-				   <p>
-				   Year: 2009 <br>
-				   Country: China <br> 
-				   Title: Creative Technologist at Potion Design <br>
-
-				   
-				   <br>To me, ITP is an art + technology playground. I was free to experiment with all kinds of the newest technologies, to collaborate with people from diverse backgrounds, and to make arts in any forms I had dreamed of..</p>
-				  </div>
-				 </article>
-				</section>
-		
- 				<section class="story" id="fourth" data-speed="11" data-type="background">
-				 <div data-type="sprite" data-offsetY="950" data-Xposition="25%" data-speed="2"></div>
-				 <article>
-				  <h2>Xiaoyang Feng</h2>
-				  <div>
-				   <p>
-				   Year: 2009 <br>
-				   Country: China <br> 
-				   Title: Creative Technologist at Potion Design <br>
-
-				   
-				   <br>To me, ITP is an art + technology playground. I was free to experiment with all kinds of the newest technologies, to collaborate with people from diverse backgrounds, and to make arts in any forms I had dreamed of..</p>
-				  </div>
-				 </article>
-				</section>
-		
-		
-				<section class="story" id="fifth" data-speed="14" data-type="background">
-				 <div data-type="sprite" data-offsetY="950" data-Xposition="25%" data-speed="5"></div>
-				 <article>
-				  <h2>Xiaoyang Feng</h2>
-				  <div>
-				   <p>
-				   Year: 2009 <br>
-				   Country: China <br> 
-				   Title: Creative Technologist at Potion Design <br>
-
-				   
-				   <br>To me, ITP is an art + technology playground. I was free to experiment with all kinds of the newest technologies, to collaborate with people from diverse backgrounds, and to make arts in any forms I had dreamed of..</p>
-				  </div>
-				 </article>
-				</section>
-		
-		
-<!--
-			<div id="whatIsITP"> </div>
-		
-		<ul>
-			<li>
-				<div id="whatIsBG"> </div>
-				<blockquote> I love ITP. It has been a great experience. 
-					<cite> Person person, year, country</cite>
-					</blockquote>
-			</li>
-			
-			<li>
-				<div id="whatIsBG"> </div>
-				<blockquote> I love ITP. It has been a great experience. 
-					<cite> Person person, year, country</cite>
-					</blockquote>
-			</li>
-			
-			<li>
-				<div id="whatIsBG"> </div>
-				<blockquote> I love ITP. It has been a great experience. 
-					<cite> Person person, year, country</cite>
-					</blockquote>
-			</li>
-		</ul>
--->
+				   </p>				  
+				</div>
+			</div>
+		</div>
+	 </article>
+	</section>
 
 	
+	
+	<section class="story" id="second" data-speed="11" data-type="background">
+	 <div data-type="sprite" data-offsetY="-950" data-Xposition="25%" data-speed="5"></div>
+	 <article>
+	  <h3>Naoto Yokoyama</h3>
+	  <div>
+	   <p>
+			Year of graduation: 2002 <br>
+			From: Japan <br>
+			Current title: Business Development Manager, Android, Google <br><br>
+			
+			What did it mean for you to attend ITP? 
+			ITP changed my life. To study at ITP was one of the most challenging and valuable experience. It was my first step to get enter into real “global” world..
+	   </p>
+	  </div>
+	 </article>
+	</section>
+	
+	<section class="story" id="third" data-speed="11" data-type="background">
+	 <div data-type="sprite" data-offsetY="950" data-Xposition="25%" data-speed="2"></div>
+	 <article>
+	  <h3>Xiaoyang Feng</h3>
+	  <div>
+	   <p>
+	   Year: 2009 <br>
+	   Country: China <br> 
+	   Title: Creative Technologist at Potion Design <br>
+
+	   
+	   <br>To me, ITP is an art + technology playground. I was free to experiment with all kinds of the newest technologies, to collaborate with people from diverse backgrounds, and to make arts in any forms I had dreamed of..</p>
+	  </div>
+	 </article>
+	</section>
+
+		<section class="story" id="fourth" data-speed="11" data-type="background">
+	 <div data-type="sprite" data-offsetY="950" data-Xposition="25%" data-speed="2"></div>
+	 <article>
+	  <h2>Xiaoyang Feng</h2>
+	  <div>
+	   <p>
+	   Year: 2009 <br>
+	   Country: China <br> 
+	   Title: Creative Technologist at Potion Design <br>
+
+	   
+	   <br>To me, ITP is an art + technology playground. I was free to experiment with all kinds of the newest technologies, to collaborate with people from diverse backgrounds, and to make arts in any forms I had dreamed of..</p>
+	  </div>
+	 </article>
+	</section>
+
+
+	<section class="story" id="fifth" data-speed="14" data-type="background">
+	 <div data-type="sprite" data-offsetY="950" data-Xposition="25%" data-speed="5"></div>
+	 <article>
+	  <h2>Xiaoyang Feng</h2>
+	  <div>
+	   <p>
+	   Year: 2009 <br>
+	   Country: China <br> 
+	   Title: Creative Technologist at Potion Design <br>
+
+	   
+	   <br>To me, ITP is an art + technology playground. I was free to experiment with all kinds of the newest technologies, to collaborate with people from diverse backgrounds, and to make arts in any forms I had dreamed of..</p>
+	  </div>
+	 </article>
+	</section>
+		
+
 	
 
   <!-- Our Javascript, starting with jQuery -->
   <script src='js/libs/jquery-1.6.1.min.js'></script>
   <script src="js/script.js"></script>
+  <script src="webfontkit/specimen_files/easytabs.js" type="text/javascript" charset="utf-8"></script>
   <!--[if lt IE 7 ]>
     <script src="js/libs/dd_belatedpng.js"></script>
     <script>DD_belatedPNG.fix("img, .png_bg");
