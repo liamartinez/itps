@@ -38,7 +38,7 @@ header { position: relative; padding: 0 0 0 280px; border-bottom: 1px solid #999
 #bgImage {
 	position: relative;
 	width: 100%;
-	margin-top: -175px;
+	margin-top: -100px;
 /*
 	left: 0;
 	padding: 0;
@@ -70,13 +70,20 @@ header { position: relative; padding: 0 0 0 280px; border-bottom: 1px solid #999
 	position:absolute; 
 	left: 50%;
 	margin-left: -170px; 
-
 }
 
+.logo {
+	width: 305; /*--Specify Width--*/
+	height: 126; /*--Specify Height--*/
+	position: fixed;
+	left: 60%;
+	top:10%;
+}
 
 body {
 	font-size: .75em;
-line-height: 1.4em;
+	line-height: 1.4em;
+	background-color: white;
 }
 
 #itp-box {
@@ -106,16 +113,18 @@ line-height: 1.4em;
 }
 
 #blue-box {
-	position: absolute;
+	position: relative;
 	top:70%%;
 	width: 100%;
 	height: 150px; 
 	background-color: #375591;
+	padding-top: 10px;
+	margin-top: 50px;
 	
 }
 
 .contentPage {
-	margin-top: 55px; 
+	margin-top: 5%; 
 	position: relative;
 }
 
@@ -134,6 +143,14 @@ img.titles {
 	color: black;
 }
 
+#NYU a:visited{
+	color: black;
+}
+
+#NYU a:active{
+	color: black;
+}
+
 #NYU a:hover {
 	background-color: #522F91;
 	text-decoration: none;
@@ -144,11 +161,17 @@ img.titles {
 	color: black;
 }
 
+#ITP a:visited{
+	color: black;
+}
+
 #ITP a:hover {
+	color: white;
 	background-color: #28284F;
 	text-decoration: none;
-	color: white;
 }
+
+
 
 .titles {
 		font-family: 'Yanone Kaffeesatz', 'Ubuntu','OstrichSansMedium' ,'Lucida Sans Unicode', 'Lucida Grande', 'PT Sans Narrow', sans-serif;
@@ -163,31 +186,37 @@ img.titles {
 	background-color:#375591; /* blue */
 	color:white;
 	text-decoration: none; 
+	padding-right: 5px;
+	padding-left:  5px;
 }
 
 #faq a:hover {
 	background-color:#317C8A; /* green */
 	color:white;
 	text-decoration: none; 
+	padding-right: 5px;
+	padding-left:  5px;
 }
 
 #admis a:hover {
 	background-color:#D34F5E; /* fuschia */
 	color:white;
 	text-decoration: none; 
+	padding-right: 5px;
+	padding-left:  5px;
 }
 
 
 
 h1 {
-	margin-top: -20px; 
+	margin-top: -5%;
 	letter-spacing: 0.1em; 
-	font-size: 2.5em; 
+	font-size: 2.4em; 
 	font-family: 'Yanone Kaffeesatz', 'OstrichSansMedium', Impact,  Times;
 /* 	font-family: 'LetterGothicStdRegular','Josefin Sans','Lucida Sans Unicode', 'Lucida Grande', 'PT Sans Narrow', sans-serif; */
     font-weight: 500;
 	 /* font-family: 'Merriweather', serif; */
-	 margin-bottom: 40px;
+	 margin-bottom: 5%px;
 }
 
 
@@ -198,7 +227,7 @@ h2 {
 	font-size: 2.5em; 
     color: white;
     position: absolute;
-    margin-top: 20%;
+    top: 60%;
     left: 34%;
 }
 
@@ -254,7 +283,7 @@ h3 {
 }
 
 footer {
-	color: white; width: 100%; height: 100px; background-color: black; padding-top: 45px; padding-left: 30px;
+	color: white; width: 100%; height: 100px; background-color: black; padding-top: 45px; padding-left: 10%;
 }
 
 #ITPName {
@@ -262,20 +291,17 @@ footer {
     font-weight: 300;
 	font-size: 2em;
 	letter-spacing: .1em;
+	padding-bottom: 10px;
+	
 }
 
 /* parallax */
 
-section { background: url(../images/slide1a.jpg) 50% 0 no-repeat fixed;  } /* what does adding a background here do?  */
+section { background-color: black;   } /* what does adding a background here do?  */
 
-.story { height: 550px; padding: 0; margin: 0; width: 100%; max-width: 1920; position: relative; margin: 0 auto; }
+.story { height: 550px; padding: 0; margin: 0; width: 100%; max-width: 1920; position: relative; }
 
-#first { background: url(../images/wintershow2011_11.jpg)  no-repeat center center fixed; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	}
+#first { background: url(../images/wintershow2011_11.jpg)  no-repeat; }
 
 
 /*
@@ -287,24 +313,14 @@ section { background: url(../images/slide1a.jpg) 50% 0 no-repeat fixed;  } /* wh
 	}
 */
 	
-#second {
-	background-color: #D34F5E; color: white;  width: 100%;  height:200px;  line-height: 1.5em; box-shadow: 0 0 25px rgba(0,0,0,0.3); 
-}	
+#second {	background-color: #D34F5E; color: white;  width: 100%;  height:2%;  line-height: 1.5em; box-shadow: 0 0 25px rgba(0,0,0,0.3); }	
 	
 
-#third { background: url(../images/wintershow2011_26.jpg)  no-repeat center center fixed; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	 }
+#third { background: url(../images/wintershow2011_26.jpg)  no-repeat center center fixed;  }
 
 
 
-#fourth { 
-background-color: #317C8A; color: white;  width: 100%;  height:200px;  line-height: 1.5em; box-shadow: 0 0 25px rgba(0,0,0,0.3); 
-
-	 }
+#fourth { background-color: #317C8A; color: white;  width: 100%; height:2%;  line-height: 1.5em; box-shadow: 0 0 25px rgba(0,0,0,0.3); 	 }
 
 
 /*
@@ -316,51 +332,25 @@ background-color: #317C8A; color: white;  width: 100%;  height:200px;  line-heig
 	 }
 */
 
-#fifth { background: url(../images/wintershow2011_09.jpg)  no-repeat center center fixed; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	 }
+#fifth { background: url(../images/wintershow2011_09.jpg)  no-repeat center center fixed; }
 
-#sixth { 
-background-color: #375591; color: white;  width: 100%;  height:200px;  line-height: 1.5em; box-shadow: 0 0 25px rgba(0,0,0,0.3); 
-
-	 }
+#sixth { background-color: #375591; color: white;  width: 100%;  height:2%;  line-height: 1.5em; box-shadow: 0 0 25px rgba(0,0,0,0.3); padding-bottom: 2%	 }
 	 
-#seventh { background: url(../images/wintershow2011_36.jpg)  no-repeat center center fixed; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	 }	 
+#seventh { background: url(../images/wintershow2011_36.jpg)  no-repeat center center fixed; }	 
 
-/* Background Only */
-
-/* #first { padding: 30% 0; } */
-/* #first { margin-bottom: 30% } */
 #first article { margin-top 50px; background-color: #D34F5E; color: white;  width: 100%; line-height: 1.5em; box-shadow: 0 0 25px rgba(0,0,0,0.3); }
-/* #first article p { margin-bottom: 25px; margin-top: 25px; }  */
 
-/* Background Only */
-/* #second { padding: 10px 0px;} */
-#second article {  color: #fff; line-height: 1.5em; padding-top: 9%;  }
+#second article {  color: #fff; line-height: 1.5em; padding-top: 9%; padding-bottom: 9% }
 #second article p { text-align: right}
 
-
-/* Background Only */
 #third article { margin-top 50px; background-color: #D34F5E; color: white;  width: 100%; line-height: 1.5em; box-shadow: 0 0 25px rgba(0,0,0,0.3); }
 
-/* Background Only */
-#fourth article {  color: #fff; line-height: 1.5em; padding-top: 9%;  }
+#fourth article {  color: #fff; line-height: 1.5em; padding-top: 9%;padding-bottom: 9%  }
 #fourth article p { text-align: right}
 
-/* Background Only */
-#fifth article { margin-top 50px; background-color: #D34F5E; color: white;  width: 100%; line-height: 1.5em; box-shadow: 0 0 25px rgba(0,0,0,0.3); }
+#fifth article { margin-top 50px; background-color: #D34F5E; color: white;  width: 100%; line-height: 1.5em; box-shadow: 0 0 25px rgba(0,0,0,0.3);}
 
-/* Background Only */
 #sixth article {  color: #fff; line-height: 1.5em; padding-top: 9%;  }
 #sixth  article p { text-align: right}
 
-/* Background Only */
 #seventh article { margin-top 50px; background-color: #D34F5E; color: white;  width: 100%; line-height: 1.5em; box-shadow: 0 0 25px rgba(0,0,0,0.3); }
