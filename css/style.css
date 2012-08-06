@@ -63,6 +63,7 @@ body {
 	background-color: #28284F; 
 }
 
+
 #shanghai-box {
 	float:left;
 	width: 50%;
@@ -88,20 +89,21 @@ body {
 	height: 150px; 
 	background-color: #375591;
 	padding-top: 10px;
-	margin-top: 50px;
+	margin-top: 7%;
 	
+}
+
+#blue-box h2 {
+	margin: auto;
 }
 
 .contentPage { 
 	position: relative;
 	margin-left: 7%;
 	margin-right: 7%; 
+	margin-top: 3%
 }
 
-
-img.titles {
-	margin-bottom: 5px; 
-}
 
 
 #NYU a:link{
@@ -144,33 +146,25 @@ img.titles {
     	font-size: 2em;
     	letter-spacing: .1em;
     	text-decoration: none;
-    	bottom: 10px;
-
-    
 }
 
 #news a:hover {
 	background-color:#375591; /* blue */
 	color:white;
 	text-decoration: none; 
-	padding-right: 5px;
-	padding-left:  5px;
+	padding: 3px;
 }
 
 #faq a:hover {
 	background-color:#317C8A; /* green */
 	color:white;
 	text-decoration: none; 
-	padding-right: 5px;
-	padding-left:  5px;
 }
 
 #admis a:hover {
 	background-color:#D34F5E; /* fuschia */
 	color:white;
 	text-decoration: none; 
-	padding-right: 5px;
-	padding-left:  5px;
 }
 
 
@@ -204,13 +198,13 @@ h2 {
 
 .excerpt {
 	margin-top: 20px;
+	font-family:   'Nobile', sans-serif;
+    font-size: 12px;
+    line-height: 1.6em;
 }
 
 p {
-/* font-weight: 200;'Vollkorn', 'Tahoma' */
-font-family:   'Nobile', sans-serif;
-font-size: 12px;
-line-height: 1.6em;
+	margin-top: 16px;
 
 }
 
@@ -255,7 +249,7 @@ h3 {
 }
 
 footer {
-	color: white; width: 100%; height: 100px; background-color: black; padding-top: 65px; padding-left: 10%;
+	color: white; width: 100%; height: 100px; background-color: black; padding-top: 9.5%; padding-left: 10%;
 }
 
 #ITPName {
@@ -263,7 +257,7 @@ footer {
     font-weight: 300;
 	font-size: 2em;
 	letter-spacing: .1em;
-	padding-bottom: 10px;
+	padding-bottom: 1%;
 	
 }
 
@@ -271,9 +265,14 @@ footer {
 
 section { background-color: black;   } /* what does adding a background here do?  */
 
-.story { height: 550px; padding: 0; margin: 0; width: 100%; max-width: 1920; position: relative; }
+.story { height: 500px; padding: 0; margin: 0; width: 100%; max-width: 1920; position: relative; }
 
-#first { background: url(../images/wintershow2011_11.jpg)  no-repeat; }
+#first { background: url(../images/wintershow2011_11.jpg)  ;
+		-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover; 
+ }
 
 
 /*
@@ -285,14 +284,22 @@ section { background-color: black;   } /* what does adding a background here do?
 	}
 */
 	
-#second {	background-color: #D34F5E; color: white;  width: 100%;  height:2%;  line-height: 1.5em; box-shadow: 0 0 25px rgba(0,0,0,0.3); }	
+#second {	background-color: #D34F5E; color: white;  width: 100%;  height:2%;  line-height: 1.5em; box-shadow: 0 0 25px rgba(0,0,0,0.3);
+}	
 	
 
-#third { background: url(../images/wintershow2011_26.jpg)  no-repeat center center fixed;  }
+#third { background: url(../images/wintershow2011_26.jpg)   center center fixed;  
+		
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover; 
+}
 
 
 
-#fourth { background-color: #317C8A; color: white;  width: 100%; height:2%;  line-height: 1.5em; box-shadow: 0 0 25px rgba(0,0,0,0.3); 	 }
+#fourth { background-color: #317C8A; color: white;  width: 100%; height:2%;  line-height: 1.5em; box-shadow: 0 0 25px rgba(0,0,0,0.3); 	
+}
 
 
 /*
@@ -304,11 +311,23 @@ section { background-color: black;   } /* what does adding a background here do?
 	 }
 */
 
-#fifth { background: url(../images/wintershow2011_09.jpg)  no-repeat center center fixed; }
+#fifth { background: url(../images/wintershow2011_09.jpg)   center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover; 
 
-#sixth { background-color: #375591; color: white;  width: 100%;  height:2%;  line-height: 1.5em; box-shadow: 0 0 25px rgba(0,0,0,0.3); padding-bottom: 2%	 }
+ }
+
+#sixth { background-color: #375591; color: white;  width: 100%;  height:2%;  line-height: 1.5em; box-shadow: 0 0 25px rgba(0,0,0,0.3); padding-bottom: 2%;	
+ }
 	 
-#seventh { background: url(../images/wintershow2011_36.jpg)  no-repeat center center fixed; }	 
+#seventh { background: url(../images/wintershow2011_36.jpg)  center center fixed; 
+		-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover; 
+}	 
 
 #first article { margin-top 50px; background-color: #D34F5E; color: white;  width: 100%; line-height: 1.5em; box-shadow: 0 0 25px rgba(0,0,0,0.3); }
 
@@ -330,84 +349,130 @@ section { background-color: black;   } /* what does adding a background here do?
 
 /* PAGES */
 
-.logo {
-	width: 305; /*--Specify Width--*/
-	height: 126; /*--Specify Height--*/
-	margin-left: 60%;
-	margin-top:3%;
+
+.logo-head {
+	position: relative;
+	margin-bottom: 2%
 }
+
+.logo {
+     margin-top: -145px;
+     margin-left: 45%;
+
+}
+
+#itp-box2 {
+	float:left;
+	width: 65%;
+	height: 126px; /* height of the logo */
+	top:70%;
+	background-color: #28284F; 
+}
+
+#shanghai-box2 {
+	float:left;
+	width: 35%;
+	height: 126px; /* height of the logo */
+	top:70%;
+	background-color: #522F91; 
+}
+
+
 
 nav {
-	margin-left:10%;
-	margin-top: 3%;
+	margin-bottom: 8%;
+	position: relative;
 }
 
-nav a {
+nav div {
+position: absolute;
+	margin-left: -10px;
+	padding-left: 10px;
+	margin-right: 15px;
+	padding-right: 10px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	float: left;
+}
+
+
+#news1 {
+	}
+
+#faq1 {
+	margin-left: 7%;
+}
+
+#admis1 {
+	margin-left: 14%;
+}
+
+#news1-current {
+	background-color:#375591; /* blue */
 	color:white;
 	text-decoration: none; 
-	padding-left:  8px;
+	margin-left: -1%;
 }
 
-
-nav #news1 {
-	background-color:#375591; /* blue */
-	color: white;
-	margin-right: 15px;
-
-	
-	
-}
-
-nav #faq1 {
+#faq1-current{
 	background-color:#317C8A; /* green */
-	color: white;
-	margin-right: 15px;
-	margin-left: 5px;
-	
-
-}
-
-nav #admis1 {
-	background-color:#D34F5E; /* fuschia */	
-	color: white;
-	margin-right: 20px;
-	margin-left: 5px;
-
-	
-
-}
-
-nav a:active {
-	color:black;
+	color:white;
 	text-decoration: none; 
-	background-color:white;
+	margin-left: 7.5%;
 
 }
 
-nav a:hover {
-	color:black;
+#admis1-current {
+	background-color:#D34F5E; /* fuschia */
+	color:white;
 	text-decoration: none; 
-	background-color:white;
+	margin-left: 14%;
 
 }
 
-nav current {
-	background-color: white;
-	color: black;
+#news1 a:hover {
+	background-color:#375591; /* blue */
+	color:white;
+	text-decoration: none; 
+	padding: 3px 4px;
+
+
 }
 
+#faq1 a:hover {
+	background-color:#317C8A; /* green */
+	color:white;
+	text-decoration: none; 
+	padding: 3px 4px;
+}
+
+#admis1 a:hover {
+	background-color:#D34F5E; /* fuschia */
+	color:white;
+	text-decoration: none; 
+	padding: 3px 4px;
+	padding-left: 5px;
+}
+
+.content {
+	margin-top: 4%;
+	margin-bottom: 10%;
+	margin-left: 15%;
+}
 
 .post {
-	margin-left:10%;
-	margin-top: 6%;
 	font-family:   'Nobile', sans-serif;
 	font-size: 12px;
 	line-height: 1.7em;
-	margin-bottom: 6%;
+	margin-bottom: 3%;
 }
 
 .post-head {
-	margin-bottom: 4%;
+	margin-bottom: 2%;
+}
+
+.post-text {
+	
 }
 
 .bottom-nav {
