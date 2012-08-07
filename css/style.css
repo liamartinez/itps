@@ -206,6 +206,10 @@ h2 {
 }
 
 
+.excerpt b {
+	line-height: 3.5em;	
+}
+
 .down {
 	margin-top: 80px; 
 	margin-bottom: 80px; 
@@ -247,9 +251,11 @@ article div {
 }
 
 footer {
+	position: absolute;
 	text-align: center;
 	color: white; width: 100%; height: 100px; background-color: black; padding-top: 5%;
 	font-family:   'Nobile', sans-serif;
+	z-index: 99;
 }
 
 footer span {
@@ -272,6 +278,7 @@ section { background-color: black;   } /* what does adding a background here do?
 .story { height: 500px; padding: 0; margin: 0; width: 100%; max-width: 1920; position: relative; }
 
 #first { background: url(../images/wintershow2011_11.jpg)  ;
+	/* background: url(../images/rotate.php?i=0);   */
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -292,7 +299,9 @@ section { background-color: black;   } /* what does adding a background here do?
 }	
 	
 
-#third { background: url(../images/wintershow2011_26.jpg)   center center fixed;  
+#third { background: url(../images/wintershow2011_26.jpg)   
+	/* background: url(../images/rotate.php?i=1) */
+	center center fixed;  
 		
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -315,7 +324,7 @@ section { background-color: black;   } /* what does adding a background here do?
 	 }
 */
 
-#fifth { background: url(../images/wintershow2011_09.jpg)   center center fixed;
+#fifth { background: url(../images/wintershow2011_09.jpg)  /*  background: url(../images/rotate.php?i=2)  */ center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -326,7 +335,7 @@ section { background-color: black;   } /* what does adding a background here do?
 #sixth { background-color: #375591; color: white;  width: 100%;  height:2%;  line-height: 1.5em; box-shadow: 0 0 25px rgba(0,0,0,0.3); padding-bottom: 2%;	
  }
 	 
-#seventh { background: url(../images/wintershow2011_36.jpg)  center center fixed; 
+#seventh { background: url(../images/wintershow2011_36.jpg) /* background: url(../images/rotate.php?i=3) */;   center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -352,9 +361,29 @@ section { background-color: black;   } /* what does adding a background here do?
 /* PAGES */
 
 
+.side {
+	position: absolute;
+	height: 100%;
+	padding-bottom: -10%;
+	width: 42%;
+	left: 58%;
+	overflow: hidden;
+	
+
+}
+
+.side-pic {
+	background-image: url(../images/wintershow2011_36.jpg) ;
+	height: 100%;
+	top:30%;
+	margin-left: -50%;
+
+}
+
+
+
 .logo-head {
 	position: relative;
-	margin-bottom: 2%
 }
 
 .logo {
@@ -387,7 +416,7 @@ nav {
 }
 
 nav div {
-position: absolute;
+	position: absolute;
 	margin-left: -10px;
 	padding-left: 10px;
 	margin-right: 15px;
@@ -459,7 +488,7 @@ position: absolute;
 .content {
 	margin-top: 4%;
 	margin-bottom: 10%;
-	margin-left: 15%;
+	margin-left: 5%;
 }
 
 .post {
@@ -471,14 +500,15 @@ position: absolute;
 
 .post-head {
 	margin-bottom: 2%;
+	margin-left: -5px;
 }
 
 .post-text {
-	
+	margin-left: -5px;
 }
 
 .bottom-nav {
-	margin-left:-6%;
+	margin-left:-4%;
 	margin-top: 1%;
 	margin-bottom:15%;
 	letter-spacing: 0.1em; 
