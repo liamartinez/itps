@@ -1,10 +1,17 @@
+/*   
+Theme Name: ITP Shanghai
+Theme URI: http://itps.liamartinez.com
+Description: Theme for ITP Shanghai
+Author: Lia Martinez
+*/
 
-@import url(bootstrap/css/bootstrap-responsive.css);
-@import url(bootstrap/css/bootstrap.css);
 
+@import url(css/bootstrap/css/bootstrap-responsive.css);
+@import url(css/bootstrap/css/bootstrap.css);
+
+@media screen {
 
 header { position: relative; padding: 0 0 0 280px; border-bottom: 1px solid #999; }
-
 
 .frontPage {
 	float:left;
@@ -23,12 +30,12 @@ header { position: relative; padding: 0 0 0 280px; border-bottom: 1px solid #999
 
 #bgImage {
 	
-	background-image: url(../images/wintershow2011_02.jpg) ;
+	background-image: url(images/wintershow2011_02.jpg) ;
 	background-size: cover;
 	position: absolute;
 	height: 700px;
 	width: 100%;
-	
+
 }
 
 .center {
@@ -38,14 +45,23 @@ header { position: relative; padding: 0 0 0 280px; border-bottom: 1px solid #999
 	display: block;
 }
 
-.center-logo  {
-	
+.center-logo {
+	width: 305; /*--Specify Width--*/
+	height: 126; /*--Specify Height--*/
+	position:absolute; 
+	left: 50%;
+	margin-left: -152px; 
+	margin-top: -75%;  /* these numbers must change when the height changes. */
+}
+
+.center-logo2  {
 	width: 305; /*--Specify Width--*/
 	height: 126; /*--Specify Height--*/
 	position:absolute; 
 	left: 50%;
 	margin-left: -170px; 
 }
+
 
 
 body {
@@ -76,7 +92,7 @@ body {
 #white-box {
 	position: absolute;
 	width: 100%;
-	height: 126px;
+	height: 700px;
 	top:70%; 
     background-color: white;
 /* you can later change this to be top: 1/3 of the height (or however many pages there will be, and then backtrack the margin from there.      */
@@ -210,6 +226,14 @@ h2 {
 	line-height: 3.5em;	
 }
 
+.excerpt a {
+	color: black; 
+}
+
+.excerpt a:hover {
+	text-decoration: none;
+}
+
 .down {
 	margin-top: 80px; 
 	margin-bottom: 80px; 
@@ -277,8 +301,8 @@ section { background-color: black;   } /* what does adding a background here do?
 
 .story { height: 500px; padding: 0; margin: 0; width: 100%; max-width: 1920; position: relative; }
 
-#first { background: url(../images/wintershow2011_11.jpg)  ;
-	/* background: url(../images/rotate.php?i=0);   */
+#first { /* background: url(images/wintershow2011_11.jpg)  */ ;
+	 background: url(images/rotate.php?i=0);   
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -287,7 +311,7 @@ section { background-color: black;   } /* what does adding a background here do?
 
 
 /*
-#second { background: url(../images/wintershow2011_07.jpg)  no-repeat center center fixed; 
+#second { background: url(images/wintershow2011_07.jpg)  no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -299,8 +323,8 @@ section { background-color: black;   } /* what does adding a background here do?
 }	
 	
 
-#third { background: url(../images/wintershow2011_26.jpg)   
-	/* background: url(../images/rotate.php?i=1) */
+#third { /* background: url(images/wintershow2011_26.jpg) */   
+	background: url(images/rotate.php?i=1)
 	center center fixed;  
 		
 	-webkit-background-size: cover;
@@ -316,7 +340,7 @@ section { background-color: black;   } /* what does adding a background here do?
 
 
 /*
-#fourth { background: url(../images/wintershow2011_36.jpg)  no-repeat center center fixed; 
+#fourth { background: url(images/wintershow2011_36.jpg)  no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -324,7 +348,7 @@ section { background-color: black;   } /* what does adding a background here do?
 	 }
 */
 
-#fifth { background: url(../images/wintershow2011_09.jpg)  /*  background: url(../images/rotate.php?i=2)  */ center center fixed;
+#fifth { background: url(images/wintershow2011_09.jpg)  /*  background: url(images/rotate.php?i=2)  */ center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -335,7 +359,7 @@ section { background-color: black;   } /* what does adding a background here do?
 #sixth { background-color: #375591; color: white;  width: 100%;  height:2%;  line-height: 1.5em; box-shadow: 0 0 25px rgba(0,0,0,0.3); padding-bottom: 2%;	
  }
 	 
-#seventh { background: url(../images/wintershow2011_36.jpg) /* background: url(../images/rotate.php?i=3) */;   center center fixed; 
+#seventh { background: url(images/wintershow2011_36.jpg) /* background: url(images/rotate.php?i=3) */;   center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -373,7 +397,7 @@ section { background-color: black;   } /* what does adding a background here do?
 }
 
 .side-pic {
-	background-image: url(../images/wintershow2011_36.jpg) ;
+	background-image: url(images/wintershow2011_36.jpg) ;
 	height: 100%;
 	top:30%;
 	margin-left: -50%;
@@ -501,6 +525,12 @@ nav div {
 .post-head {
 	margin-bottom: 2%;
 	margin-left: -5px;
+	color: black;
+	font-size: 14px;
+}
+
+.post-head a {
+	color: black;
 }
 
 .post-text {
@@ -508,29 +538,28 @@ nav div {
 }
 
 .bottom-nav {
-	margin-left:-4%;
 	margin-top: 1%;
 	margin-bottom:15%;
 	letter-spacing: 0.1em; 
 	font-size: 1.9em; 
 	font-family: 'Yanone Kaffeesatz', 'OstrichSansMedium', Impact,  Times;
     font-weight: 300;
-    
+    margin-left: 5%;
+
 }
 
 .next-arrow {
 	margin-left: 2%;
-	margin-right:  2%;
 }
 
 .back-arrow {
-	margin-left:  2%;
 	margin-right:  2%;
 }
 
 .archives {
-	margin-left: 15%;
-	margin-right: 15%;
+	margin-left: 17%;
+	margin-right: 17%;
+	
 }
 
 .bottom-nav a {
@@ -540,3 +569,5 @@ nav div {
 .bottom-nav a:hover {
 	text-decoration: none;
 }
+
+} /* END screen media */
